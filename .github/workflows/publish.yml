@@ -11,6 +11,7 @@ env:
 
 jobs:
   build-and-push-image:
+    name: Build and push image
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,6 +20,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Compile Typescript
+        run: npm run ts-build
 
       - name: Setup QEMU
         uses: docker/setup-qemu-action@v2
