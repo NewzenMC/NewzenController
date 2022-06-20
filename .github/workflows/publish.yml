@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: "newzen-controller
+  IMAGE_NAME: newzen-controller
 
 jobs:
   build-and-push-image:
