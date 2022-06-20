@@ -1,0 +1,11 @@
+.git
+.idea
+node_modules
+.github
+
+Dockerfile
+.dockerignore
+.gitignore
+.prettierrc.json
+tsconfig.json
+src
